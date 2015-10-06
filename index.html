@@ -1,0 +1,34 @@
+<head></head>
+<body ng-app="newsApp" >
+ 
+<script type= "text/javascript" src="newsApp.js"> </script>
+<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+ <div class="container"> 
+   <header>Free Code Camp <hr>camper news</header>
+  <div ng-controller="gridController as grid">
+    <div ng-repeat="element in grid.elements">
+      
+      
+      <a href={{element.link}} target="_blank">
+      <div class="news">
+        <image  class="pics" ng-src={{element.author.picture}}></image>
+        <div class="opis">
+      <h4 class="headline"> {{element.headline }}
+      </h4>
+          <h5>{{element.upVotes.length + " "}}<i class="fa fa-heart"></i></h3></div>
+      </div></a>
+      
+        </div>
+      </div>
+      
+     
+     
+      
+    </div>
+  </div>
+ <div> 
+
+</body>
+
